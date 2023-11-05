@@ -34,6 +34,24 @@
                 margin-right: 15px;
             }
         }
+
+        .video-wrapper {
+            position: relative;
+            max-width: 100%;
+            /* Adjust this as needed */
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
+        }
+
+        .video-wrapper video::poster {
+            object-fit: cover;
+            /* You can change this to 'contain' or other values */
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 
@@ -73,7 +91,8 @@
                     <nav class="classy-navbar justify-content-between" id="lxNav">
 
                         <a class="nav-brand" href="index.html" data-aos="fade-right" data-aos-duration="3000">
-                            <h2 style="height: 30px; width: 100px;" class="home-logo"><img src="./img/bg-img/logo.jpg" style=" border-radius: 50px;" alt=""></h2>
+                            <h2 style="height: 30px; width: 100px;" class="home-logo"><img src="./img/bg-img/logo.jpg"
+                                    style=" border-radius: 50px;" alt=""></h2>
                         </a>
 
                         <div class="classy-navbar-toggler">
@@ -107,8 +126,7 @@
     </header>
 
 
-    <section class="breadcrumb-area bg-img bg-overlay jarallax"
-        style="background-image:url(img/lx-imges/lx3.jpg)">
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image:url(img/lx-imges/lx3.jpg)">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -158,10 +176,12 @@
 
                 <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video human mb-30 wow fadeInUp"
                     data-wow-delay="300ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/4.jpg" alt="">
+                    <div class="single-portfolio-content video-wrapper">
+                        <video src="img/bg-img/v3.mp4" alt="" poster="img/bg-img/27.jpg">
+
+                        </video>
                         <div class="hover-content">
-                            <a href="img/bg-img/4.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg-img/v3.mp4" class="">+</a>
                         </div>
                     </div>
                 </div>
@@ -196,12 +216,23 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+                <!-- <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
                     data-wow-delay="300ms">
                     <div class="single-portfolio-content">
                         <img src="img/bg-img/8.jpg" alt="">
                         <div class="hover-content">
                             <a href="img/bg-img/8.jpg" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item video country mb-30 wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <div class="single-portfolio-content video-wrapper">
+                        <video src="img/bg-img/v2.mp4" alt="" poster="img/bg-img/11.jpg">
+
+                        </video>
+                        <div class="hover-content">
+                            <a href="img/bg-img/v2.mp4" class="">+</a>
                         </div>
                     </div>
                 </div>
@@ -228,10 +259,12 @@
 
                 <div class="col-12 col-sm-6 col-lg-6 single_gallery_item video country mb-30 wow fadeInUp"
                     data-wow-delay="100ms">
-                    <div class="single-portfolio-content">
-                        <img src="img/bg-img/16.jpg" alt="">
+                    <div class="single-portfolio-content video-wrapper">
+                        <video src="img/bg-img/v1.mp4" alt="" poster="img/bg-img/7.jpg">
+
+                        </video>
                         <div class="hover-content">
-                            <a href="img/bg-img/16.jpg" class="portfolio-img">+</a>
+                            <a href="img/bg-img/v1.mp4" class="">+</a>
                         </div>
                     </div>
                 </div>
@@ -350,9 +383,9 @@
                     <div class="icons">
 
                         <a href="https://www.instagram.com/rajcreationphotography/" target="_blank"><img
-                            src="./img/footer-icons/insta.jpg"></a>
-                    <a href="https://m.youtube.com/channel/UCtwPw_g1ljZTUgjjc9xrPvg" target="_blank"><img
-                            src="./img/footer-icons/youtube.jpg"></a>
+                                src="./img/footer-icons/insta.jpg"></a>
+                        <a href="https://m.youtube.com/channel/UCtwPw_g1ljZTUgjjc9xrPvg" target="_blank"><img
+                                src="./img/footer-icons/youtube.jpg"></a>
 
                     </div>
                 </div>
@@ -366,8 +399,9 @@
             </div>
             <hr>
             <div class="containerDown">
-                <p>Copyright © 2023 All rights reserved | Made  by <a
-                        href="https://www.instagram.com/rajcreationphotography/" target="_blank" style="color: aliceblue;"> Raj Creation Photography</a></p>
+                <p>Copyright © 2023 All rights reserved | Made by <a
+                        href="https://www.instagram.com/rajcreationphotography/" target="_blank"
+                        style="color: aliceblue;"> Raj Creation Photography</a></p>
             </div>
         </div>
     </footer>
@@ -402,7 +436,8 @@
         gtag('config', 'UA-23581568-13');
     </script>
     <script defer src="../../../static.cloudflareinsights.com/beacon.min.js"
-        data-cf-beacon='{"rayId":"699023286d631bc2","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.9.0","si":100}'></script>
+        data-cf-beacon='{"rayId":"699023286d631bc2","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.9.0","si":100}'>
+    </script>
     <!-- animate on scroll js  -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
